@@ -1,0 +1,188 @@
+.image-shadow {
+  filter: drop-shadow(2px 0px 0px white) drop-shadow(-2px 0px 0px white)
+    drop-shadow(0px 2px 0px white) drop-shadow(0px -2px 0px white);
+    object-position: contain;
+}
+
+.vermelho {
+  color: #8b0000;
+}
+
+.dourado {
+  color: #daa520;
+}
+
+.cinza {
+  color: #2f4f4f;
+}
+
+.verde {
+  color: #006400;
+}
+
+.azul {
+  color: #191970;
+}
+
+.marrom {
+  color: #654321;
+}
+
+.silver-prego {
+  border: none;
+  outline: none;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #808080 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.silver-bg {
+  font-size: 14px;
+  padding: 6px 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #808080 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.silver-button {
+  font-size: 14px;
+  padding: 6px 16px;
+  font-weight: 400;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #808080 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.silver-button:hover {
+  background: linear-gradient(
+    45deg,
+    #808080 5%,
+    #999 10%,
+    #fff 30%,
+    #ccc 50%,
+    #ddd 70%,
+    #ccc 80%,
+    #fff 95%
+  );
+}
+
+.gold-button {
+  font-size: 14px;
+  padding: 6px 16px;
+  font-weight: 400;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #b8860b 5%,
+    #ffd700 10%,
+    #ffec8b 30%,
+    #f0e68c 50%,
+    #ffd700 70%,
+    #ffec8b 80%,
+    #b8860b 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.gold-button:hover {
+  background: linear-gradient(
+    45deg,
+    #b8860b 5%,
+    #b8860b 10%,
+    #ffd700 30%,
+    #ffec8b 50%,
+    #f0e68c 70%,
+    #ffd700 80%,
+    #ffec8b 95%
+  );
+}
+
+.bronze-button {
+  font-size: 14px;
+  padding: 6px 16px;
+  font-weight: 400;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #8b4513 5%,
+    #cd853f 10%,
+    #d2b48c 30%,
+    #a0522d 50%,
+    #d2b48c 70%,
+    #cd853f 80%,
+    #8b4513 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.bronze-button:hover {
+  background: linear-gradient(
+    45deg,
+    #8b4513 5%,
+    #8b4513 10%,
+    #cd853f 30%,
+    #d2b48c 50%,
+    #a0522d 70%,
+    #d2b48c 80%,
+    #cd853f 95%
+  );
+}
+
+.cinzel-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
