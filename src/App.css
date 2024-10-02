@@ -47,9 +47,9 @@
 }
 
 .silver-bg {
-  font-size: 14px;
+  
   padding: 6px 16px;
-  font-weight: 400;
+  
   border: none;
   outline: none;
   color: #000;
@@ -68,9 +68,9 @@
 }
 
 .silver-button {
-  font-size: 14px;
+  
   padding: 6px 16px;
-  font-weight: 400;
+  
   color: #000;
   background: linear-gradient(
     45deg,
@@ -102,9 +102,9 @@
 }
 
 .gold-button {
-  font-size: 14px;
+  
   padding: 6px 16px;
-  font-weight: 400;
+  
   color: #000;
   background: linear-gradient(
     45deg,
@@ -136,9 +136,9 @@
 }
 
 .bronze-button {
-  font-size: 14px;
+  
   padding: 6px 16px;
-  font-weight: 400;
+  
   color: #000;
   background: linear-gradient(
     45deg,
@@ -171,7 +171,7 @@
 
 .cinzel-regular {
   font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
+  
   font-style: normal;
 }
 
