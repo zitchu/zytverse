@@ -1,10 +1,10 @@
 import React from "react";
 import imagem1 from "../components/img/misc/inicial.jpg";
 import imagem2 from "../components/img/stk/cloud.png";
-import { useNavigate } from "react-router-dom";
+/* import { useNavigate } from "react-router-dom"; */
 
 function Home() {
-  const navigate = useNavigate();
+  /* const navigate = useNavigate(); */
 
   return (
     <div className="h-[400vh] w-full text-black prata flex flex-col  relative">

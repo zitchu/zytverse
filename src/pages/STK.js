@@ -1,165 +1,120 @@
-import React from "react";
-import cloud from "../components/img/stk/cloud.png";
-import cloud2 from "../components/img/stk/cloud2.png";
-import dreeco2 from "../components/img/stk/dreeco2.png";
-import joia2 from "../components/img/stk/joia2.png";
-import leon2 from "../components/img/stk/leon2.png";
-import loy2 from "../components/img/stk/loy2.png";
-import sylas2 from "../components/img/stk/sylas2.png";
-import climber2 from "../components/img/stk/climber2.png";
-import mk2 from "../components/img/stk/mk2.png";
-import verdan2 from "../components/img/stk/verdan2.png";
-import fire from "../components/img/stk/fire.png";
-import fire2 from "../components/img/stk/fire2.png";
-import frost from "../components/img/stk/frost.png";
-import frost2 from "../components/img/stk/frost2.png";
-import harshnag from "../components/img/stk/harshnag.png";
-import hecaton from "../components/img/stk/hecaton.png";
-import hill from "../components/img/stk/hill.png";
-import hill2 from "../components/img/stk/hill2.png";
-import lymrith from "../components/img/stk/lymrith.png";
-import stone from "../components/img/stk/stone.png";
-import stone2 from "../components/img/stk/stone2.png";
-import storm from "../components/img/stk/storm.png";
-import storm2 from "../components/img/stk/storm2.png";
-import zephyros from "../components/img/stk/zephyros.png";
+import React, { useEffect, useState } from "react";
+import imagens from "../components/img/stk/STKimports";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function STK() {
   const images = [
-    { src: loy2, className: "w-1/4 min-w-[70px] " },
-    { src: dreeco2, className: "w-1/5 min-w-[70px]  mr-[5%]" },
-    { src: climber2, className: "w-1/3 min-w-[70px] -mt-[15%]" },
-    { src: joia2, className: "w-1/3 min-w-[70px] -mt-[20%]" },
-    { src: sylas2, className: "w-1/3 min-w-[70px] -mt-[12%] -scale-x-100" },
-    { src: leon2, className: "w-1/4 min-w-[70px] -mt-[18%] mr-[5%]" },
-    { src: mk2, className: "w-1/3 min-w-[70px] -mt-[10%]" },
-    { src: verdan2, className: "w-1/3 min-w-[70px] -mt-[22%]" },
-    { src: hill, className: "w-[40%] min-w-[70px] " },
-    { src: hill2, className: "w-[40%] min-w-[70px] -scale-x-100" },
-    { src: stone2, className: "w-[60%] min-w-[70px] -mt-[40%]" },
-    { src: stone, className: "w-[45%] min-w-[70px] -mt-[30%]" },
-    { src: frost, className: "w-1/2 min-w-[70px] -mt-[30%]" },
-    { src: frost2, className: "w-[65%] min-w-[70px] -mt-[30%]" },
-    { src: fire, className: "w-[60%] min-w-[70px] -mt-[30%]" },
-    { src: fire2, className: "w-[40%] min-w-[70px] -mt-[25%] -scale-x-100" },
-    { src: cloud, className: "w-1/2 min-w-[70px] -mt-[20%]" },
-    { src: cloud2, className: "w-[60%] min-w-[70px] -mt-[23%] -scale-x-100" },
-    { src: storm2, className: "w-[40%] min-w-[70px] -mt-[30%]" },
-    { src: storm, className: "w-[60%] min-w-[70px] -mt-[30%] -scale-x-100" },
-    { src: zephyros, className: "w-1/2 min-w-[70px] -mt-[30%]" },
-    { src: harshnag, className: "w-[60%] min-w-[70px] -mt-[35%]" },
-    { src: hecaton, className: "w-[65%] min-w-[70px] -mt-[30%]" },
-    { src: lymrith, className: "w-1/2 min-w-[70px] -mt-[30%] -scale-x-100" },
+    { src: imagens.dreeco2, className: "w-[15%] min-w-[70px] ml-[5%]" },
+    { src: imagens.sylas2, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.dreeco2, className: "w-[15%] min-w-[70px] ml-[5%]" },
+    { src: imagens.sylas2, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.climber2, className: "w-[30%] min-w-[70px]" },
+    { src: imagens.joia2, className: "w-[25%] min-w-[70px]" },
+    { src: imagens.loy2, className: "w-[20%] min-w-[70px]" },
+    { src: imagens.leon2, className: "w-[20%] min-w-[70px] mr-[5%]" },
+    { src: imagens.mk2, className: "w-[20%] min-w-[70px]" },
+    { src: imagens.verdan2, className: "w-[20%] min-w-[70px]" },
+    { src: imagens.hill, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.hill2, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.stone2, className: "w-[30%] min-w-[70px] -mt-[5%]" },
+    { src: imagens.stone, className: "w-[45%] min-w-[70px]" },
+    { src: imagens.frost, className: "w-[25%] min-w-[70px]" },
+    { src: imagens.frost2, className: "w-[30%] min-w-[70px] -mt-[5%]" },
+    { src: imagens.fire, className: "w-[30%] min-w-[70px]" },
+    { src: imagens.fire2, className: "w-[20%] min-w-[70px] " },
+    { src: imagens.cloud, className: "w-[22%] min-w-[70px]" },
+    { src: imagens.cloud2, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.storm2, className: "w-[20%] min-w-[70px]" },
+    { src: imagens.storm, className: "w-[30%] min-w-[70px] " },
+    { src: imagens.zephyros, className: "w-[30%] min-w-[70px]" },
+    { src: imagens.harshnag, className: "w-[33%] min-w-[70px] -mt-[10%]" },
+    { src: imagens.hecaton, className: "w-[30%] min-w-[70px]" },
+    { src: imagens.lymrith, className: "w-[25%] min-w-[70px] " },
+    { src: imagens.hecaton, className: "w-[30%] min-w-[70px]" },
+    { src: imagens.lymrith, className: "w-[25%] min-w-[70px] " },
   ];
 
-  return (
-    <div className="h-auto w-full bg-gradient-to-b via-[#2f4f4f] from-[#8b0000] to-[#191970] pt-[50px] flex flex-wrap">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`w-1/2 p-2 ${
-            index % 2 === 0 ? "justify-start" : "justify-end"
-          } flex trans`}
-        >
-          <img
-            src={image.src}
-            alt={`image-${index}`}
-            className={`${image.className} image-shadow object-contain`}
-          />
-        </div>
-      ))}
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { scrollYProgress } = useScroll();
 
-      <div className="absolute w-full px-[20%] text-white flex flex-col justify-center items-center text-justify">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta?
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.25, 0.5, 0.75, 1],
+    [1, 1, 1, 1, 0]
+  );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalScrollHeight = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const scrollableHeight = totalScrollHeight - windowHeight;
+
+      const newIndex = Math.floor(
+        window.scrollY / (scrollableHeight / (images.length / 2))
+      );
+
+      if (newIndex >= 0 && newIndex < images.length / 2) {
+        setCurrentIndex(newIndex);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [images.length]);
+
+  return (
+    <div className="h-[250vh] w-full bg-gradient-to-b via-[#2f4f4f] from-[#8b0000] to-[#191970] pt-[50px] flex flex-wrap">
+      <motion.div style={{ opacity }}>
+        <div className="w-full p-2 flex fixed items-center h-full">
+          <div className="flex items-center justify-between w-full">
+            <div
+              className={`flex w-[20%] ${images[currentIndex * 2]?.className}`}
+              style={{
+                maskImage:
+                  "linear-gradient(to left, rgba(0,0,0,0) 2%, rgba(0,0,0,1))",
+                WebkitMaskImage:
+                  "linear-gradient(to left, rgba(0,0,0,0) 2%, rgba(0,0,0,1))",
+              }}
+            >
+              <img
+                src={images[currentIndex * 2]?.src}
+                alt={`image-${currentIndex * 2}`}
+                className={`object-contain image-shadow`}
+              />
+            </div>
+            <div
+              className={`flex w-[20%] ${
+                images[currentIndex * 2 + 1]?.className
+              }`}
+              style={{
+                maskImage:
+                  "linear-gradient(to right, rgba(0,0,0,0) 2%, rgba(0,0,0,1))",
+                WebkitMaskImage:
+                  "linear-gradient(to right, rgba(0,0,0,0) 2%, rgba(0,0,0,1))",
+              }}
+            >
+              <img
+                src={images[currentIndex * 2 + 1]?.src}
+                alt={`image-${currentIndex * 2 + 1}`}
+                className={`object-contain image-shadow -mr-[5%]`}
+              />
+            </div>
+          </div>
         </div>
-        <div className="px-[5%]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          voluptatum cupiditate voluptate sit doloremque? Necessitatibus,
-          recusandae consequatur. Molestiae tenetur minus repellendus doloremque
-          tempora deleniti vitae dolorem omnis enim, ea perferendis aperiam
-          atque ab incidunt ad cum tempore quia facilis asperiores? Eligendi
-          dolore laudantium, modi quis quas necessitatibus possimus excepturi
-          soluta?
-        </div>
+      </motion.div>
+
+      <div className="absolute w-full pt-[2%] px-[20%] text-white flex flex-col justify-center items-center text-justify">
+        <h1 className="text-2xl cinzel-black my-8">Storm King's Thunder</h1>
+        <h3 className=" cinzel-regular backdrop-blur-sm leading-loose">
+          A Aventura se inicia no ano de 1489 na Costa da Espada (Swordcoast) na
+          cidade de Waterdeep. Naquele momento estava sendo celebrada a
+          "Malhação de Tiamat" - uma celebração quanto ao expurgo da deusa
+          Tiamat de entrar em Faerun, expurgo esse feito por grandes e
+          desconhecidos aventureiros. <br />
+          Nossos hérois se encontram pela primeira vez na margem do oceano em
+          que uma gigante das tempestades está celebrando com aparentes amigos
+          da Aliança dos Nobres
+        </h3>
       </div>
     </div>
   );
