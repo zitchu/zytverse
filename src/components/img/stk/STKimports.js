@@ -1,12 +1,20 @@
 import cloud from "./cloud.png";
 import cloud2 from "./cloud2.png";
+import dreeco from "./dreeco.png";
 import dreeco2 from "./dreeco2.png";
+import joia from "./joia.png";
 import joia2 from "./joia2.png";
+import leon from "./leon.png";
 import leon2 from "./leon2.png";
+import loy from "./loy.png";
 import loy2 from "./loy2.png";
+import sylas from "./sylas.png";
 import sylas2 from "./sylas2.png";
+import climber from "./climber.png";
 import climber2 from "./climber2.png";
+import mk from "./mk.png";
 import mk2 from "./mk2.png";
+import verdan from "./verdan.png";
 import verdan2 from "./verdan2.png";
 import fire from "./fire.png";
 import fire2 from "./fire2.png";
@@ -47,7 +55,14 @@ const imagens = {
   stone2,
   storm,
   storm2,
-  zephyros,
+  zephyros,dreeco,
+  joia,
+  leon,
+  loy,
+  sylas,
+  climber,
+  mk,
+  verdan,
 };
 
 export default imagens;

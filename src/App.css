@@ -200,18 +200,3 @@
   }
 }
 
-@keyframes fade-down {
-  0% {
-    opacity: 0;
-    transform: tranlateY(-30px) scale(0.9);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-.animacao {
-  animation: fade-up 0.5 ease-in-out;
-}
