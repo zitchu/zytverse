@@ -171,8 +171,8 @@
 
 .cinzel-regular {
   font-family: "Cinzel Decorative", serif;
-  
   font-style: normal;
+  line-height: 2;
 }
 
 .cinzel-bold {

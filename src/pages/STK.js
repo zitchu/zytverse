@@ -43,28 +43,44 @@ function STK() {
 
   const tokens = [
     {
+      src: imagens.climber,
+      nome: "Climber",
+      text: "o bravo paladino draconato servo de klauth",
+    },
+    {
       src: imagens.dreeco,
       nome: "Dreeco",
-      text: "Dreeco, o Guardião da Floresta.",
+      text: "o esperto halfling ladino de pontaria mortal",
     },
-    { src: imagens.joia, nome: "Joia", text: "Joia, a Sabedoria Brilhante." },
-    { src: imagens.leon, nome: "Leon", text: "Leon, o Bravura Inabalável." },
-    { src: imagens.loy, nome: "Loy", text: "Loy, o Estrategista Silencioso." },
+    { src: imagens.joia, 
+      nome: "Joia", 
+      text: "A carismática shifter de um continente distante que brandia uma incrível espada magica" },
+    { src: imagens.leon, 
+      nome: "Leon", text: "" },
+      { 
+        src: imagens.loy, 
+        nome: "Loy", 
+        text: (
+          <span>
+            o erudito bardo humano com sua flauta mais afi
+            <span className="line-through">n</span>
+            ada que uma espada
+          </span>
+        )
+      },
+      
+    { src: imagens.mk, 
+      nome: "M.K.", 
+      text: "" },
     {
       src: imagens.sylas,
       nome: "Sylas",
-      text: "Sylas, o Feiticeiro das Sombras.",
+      text: "Lendário caçador de gigantes empunhando o Machado giant slayer",
     },
-    {
-      src: imagens.climber,
-      nome: "Climber",
-      text: "Climber, o Montanhista Indomável.",
-    },
-    { src: imagens.mk, nome: "M.K.", text: "MK, a Força Destruidora." },
     {
       src: imagens.verdan,
       nome: "Verdan",
-      text: "Verdan, o Guardião do Verdejante.",
+      text: "",
     },
   ];
 
@@ -103,7 +119,7 @@ function STK() {
   };
 
   return (
-    <div className="h-[550vh] md:h-[250vh] w-full bg-gradient-to-b via-[#2f4f4f] from-[#8b0000] to-[#191970] pt-[50px] flex flex-wrap">
+    <div className="h-[300vh] md:h-[250vh] w-full bg-gradient-to-b via-[#2f4f4f] from-[#8b0000] to-[#191970] pt-[50px] flex flex-wrap">
       <motion.div style={{ opacity }}>
         <div className="w-full p-2 flex fixed items-center h-full">
           <div className="flex items-center justify-between w-full">
@@ -144,79 +160,54 @@ function STK() {
       </motion.div>
 
       <div className="absolute w-full pt-[2%] px-[20%] text-white flex flex-col justify-center items-center text-justify">
-        <h1 className="text-2xl cinzel-black my-8">Storm King's Thunder</h1>
-        <h3 className="text-xs md:text-lg  cinzel-regular backdrop-blur-sm leading-loose">
-          A Aventura se inicia no ano de 1489 na Costa da Espada (Swordcoast) na
-          cidade de Waterdeep. Naquele momento estava sendo celebrada a
-          "Malhação de Tiamat" - uma celebração quanto ao expurgo da deusa
-          Tiamat de entrar em Faerun, expurgo esse feito por grandes e
-          desconhecidos aventureiros. <br />
-          Nossos hérois se encontram pela primeira vez na margem do oceano em
-          que uma gigante das tempestades está celebrando com aparentes amigos
-          da Aliança dos Nobres além de toda a população, encantada em ver uma
-          gigante das tempestades (os maiores dentre os gigantes reais) tão
-          próxima e diferente da maioria dos gigantes, dócil e alegre.
-          <br />A comemoração fez despertar também os primeiros laços entre os
-          hérois que viramimpelidos por seus contatos com suas facções a que
-          investigassem os rumores de ataques de gigantes.
+        <h1 className="mt-20 md:mt-0 md:text-2xl cinzel-black my-8">
+          Storm King's Thunder
+        </h1>
+        <h3 className="text-xs md:text-lg cinzel-regular backdrop-blur-sm">
+          A aventura se inicia no ano de 1489, na Costa da Espada (Sword Coast),
+          na cidade de Waterdeep. Naquele momento, estava sendo celebrada a
+          "Malhação de Tiamat" — uma celebração pelo expurgo da deusa Tiamat,
+          impedida de entrar em Faerûn por grandes e desconhecidos aventureiros.{" "}
+          <br />
+          Nossos heróis se encontram pela primeira vez na margem do oceano, onde
+          uma gigante das tempestades celebra com aparentes amigos da Aliança
+          dos Nobres, além de toda a população, encantada em ver uma gigante das
+          tempestades (os maiores dentre os gigantes reais) tão próxima e,
+          diferente da maioria dos gigantes, dócil e alegre. <br />A comemoração
+          despertou também os primeiros laços entre os heróis, que se viram
+          impelidos por seus contatos com suas facções a investigar os rumores
+          de ataques de gigantes que estavam acontecendo em cidades próximas.
         </h3>
         <div className="w-[80%]">
-          <img
-            src={capa}
-            alt="capa"
-            className="object-cover rounded mt-20"
-            style={{
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 98%)",
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 98%)",
-            }}
-          />
+          <img src={capa} alt="capa" className="object-cover rounded mt-10" />
         </div>
 
-        <h3 className="text-xs md:text-lg cinzel-regular mt-8 backdrop-blur-sm leading-loose">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, a
-          repudiandae iste non voluptas nihil temporibus explicabo dolorum
-          harum, sint unde deserunt blanditiis exercitationem aliquid voluptatem
-          earum nulla nemo provident maxime fugiat eos quis? Ipsa, pariatur
-          aspernatur ab consectetur autem blanditiis animi labore quidem odio
-          reiciendis a vel minima totam repudiandae itaque, ea quaerat
-          perferendis. Ut aliquid, a eius, quod omnis eos sed in atque fuga
-          tenetur nihil. Fugiat autem quae id excepturi amet! Obcaecati
-          blanditiis incidunt ullam officia ipsam ad animi, dolores provident
-          natus asperiores optio labore adipisci, fugit modi amet commodi? Nemo
-          voluptate aliquam, eveniet alias, quae nobis possimus quis officia.
-          Aperiam, veritatis? Molestiae neque officiis optio omnis esse maxime
-          unde nobis. Corrupti, dolorem dolores quisquam delectus aliquid
-          adipisci, tempore veritatis facilis natus, porro tenetur aspernatur.
-          Facilis cupiditate minima facere nobis nisi aperiam nemo libero nam
-          maxime reprehenderit consequuntur hic sed assumenda aliquam vel
-          aspernatur temporibus fugiat voluptatem, tempore beatae tenetur?
-          Itaque sit minima ratione consequuntur. Similique facere aliquid
-          voluptatem blanditiis velit nulla molestiae, eaque placeat nihil.
-          Voluptatum, illo tempora, id voluptates perspiciatis quidem magni
-          pariatur ipsum praesentium dicta placeat alias maxime! Sed sunt ipsum
-          eum molestias nulla nisi ad numquam libero vel, recusandae porro eaque
-          ducimus tenetur repudiandae aspernatur vero consequuntur natus aliquam
-          ratione officia impedit cupiditate sapiente. Mollitia saepe sint, aut
-          quas repellat tempore commodi harum tempora doloremque sed ducimus
-          minus soluta iste, maiores labore beatae!
+        <h3 className="text-xs md:text-lg cinzel-regular mt-8 backdrop-blur-sm">
+          Já no começo da busca por respostas, nossos personagens se veem na
+          necessidade de aceitar a ajuda de um misterioso gigante das
+          tempestades chamado Zephyros, que os leva em sua torre voadora para
+          ajudá-los em sua jornada. Ele revela muitos dos perigos que
+          enfrentarão enquanto seguem os segredos da corte do Rei Hekaton, que
+          parece ter desaparecido justamente quando todos os gigantes estão no
+          mais completo caos.
         </h3>
+
         <div className="flex flex-wrap md:flex-nowrap ">
           {tokens.map((token, index) => (
             <div key={index} className="p-2 pt-4 relative group ">
+              <div className="block md:hidden w-auto h-auto cinzel-regular -ml-2 absolute  bg-gray-800 text-white text-xs  rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-start z-10">
+                {token.text}
+              </div>
+              <div className="rounded cinzel-black absolute inset-0 flex justify-evenly top-0 opacity-0 group-hover:opacity-100  bg-opacity-50 text-white text-sm transition-opacity duration-300">
+                {token.nome}
+              </div>
               <img
                 src={token.src}
                 alt={`token-${index}`}
-                className="object-contain w-[100px] h-[100px] transition-transform duration-300 group-hover:scale-110"
+                className="object-contain w-[100px] h-[100px] py-2 transition-transform duration-300 group-hover:scale-110"
               />
 
-              <div className="rounded cinzel-black absolute inset-0 flex justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 text-white text-sm transition-opacity duration-300">
-                <span>{token.nome}</span>
-              </div>
-
-              <div className="w-auto h-auto cinzel-regular -ml-2 absolute mt-4 bg-gray-800 text-white text-xs  rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-start">
+              <div className="hidden md:block w-auto h-auto cinzel-regular -ml-2 absolute -mt-2 bg-gray-800 text-white text-xs  rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-start z-10">
                 {token.text}
               </div>
             </div>
@@ -230,26 +221,20 @@ function STK() {
         </button>
 
         {showSpoiler && (
-          <h3 className="cinzel-regular mt-8 backdrop-blur-sm leading-loose">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos
-            itaque a quaerat commodi animi ipsa aliquid omnis quibusdam
-            explicabo, aspernatur optio tenetur? Modi illo iure error illum
-            nesciunt reprehenderit voluptatem dolorum facere et? Rem iusto ipsum
-            pariatur voluptate, totam, odio magnam impedit quas error incidunt,
-            vitae doloremque laborum expedita. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Rerum eos itaque a quaerat commodi
-            animi ipsa aliquid omnis quibusdam explicabo, aspernatur optio
-            tenetur? Modi illo iure error illum nesciunt reprehenderit
-            voluptatem dolorum facere et? Rem iusto ipsum pariatur voluptate,
-            totam, odio magnam impedit quas error incidunt, vitae doloremque
-            laborum expedita. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Rerum eos itaque a quaerat commodi animi ipsa aliquid omnis
-            quibusdam explicabo, aspernatur optio tenetur? Modi illo iure error
-            illum nesciunt reprehenderit voluptatem dolorum facere et? Rem iusto
-            ipsum pariatur voluptate, totam, odio magnam impedit quas error
-            incidunt, vitae doloremque laborum expedita. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Rerum eos itaque a quaerat
-            laborum expedita.
+          <h3 className="cinzel-regular mt-8 backdrop-blur-sm text-xs md:text-lg">
+            Após o impedimento do culto do dragão de trazer de volta a deusa
+            Tiamat para o plano de Faerûn, o Deus Annam 'All-Father', pai de
+            todos os gigantes, decide abandoná-los e quebrar o{" "}
+            <strong>Ordenamento</strong> como punição, por entender que os
+            gigantes foram muito passivos e quase permitiram, em sua
+            passividade, que a deusa dragão entrasse em Faerûn. Com isso, a
+            dragão azul Lymrith aproveitou a confusão para se infiltrar na corte
+            do rei Hekaton, tornando-se sua conselheira, plantando discórdia
+            entre suas filhas (e na briga de sucessão) e ainda causando a morte
+            da Rainha e o sequestro do Rei. Não fossem nossos corajosos
+            aventureiros, todo o equilíbrio do continente estaria ameaçado, e a
+            própria sucessão dos gigantes, junto com o risco de um domínio por
+            parte de Lymrith, estaria em perigo.
           </h3>
         )}
       </div>
