@@ -1,3 +1,13 @@
+import mapaparadoxia1 from "../img/misc/Mapa 1.jpg";
+import mapaparadoxia2 from "../img/misc/Mapa 2.jpg";
+import stk from "../img/stk/capa.png";
+import phandalim from "../img/phandalim/phandalim.png";
+import phandalim2 from "../img/phandalim/phandalim2.jpg";
+import capathali from "../img/phandalim/capathali.jpg";
+import tumba from "../img/tomb/tumba.jpg";
+import logo from "../img/dualidade/logo.jpg";
+import landing from "../img/dualidade/landing.png";
+
 const Timeline = [
   {
     id: 1,
@@ -7,6 +17,9 @@ const Timeline = [
     duracao: "",
     cidade: "Agalor",
     detalhes: "",
+    resumo:
+      "Aventuras num mundo de Fantasia próprio original. A campanha girou em torno de pirataria e do duelo entre dois irmãos devoradores de mentes",
+    imagem: mapaparadoxia1,
   },
   {
     id: 2,
@@ -16,6 +29,8 @@ const Timeline = [
     duracao: "",
     cidade: "Waterdeep",
     detalhes: "",
+    resumo: "",
+    imagem: stk,
   },
   {
     id: 3,
@@ -25,6 +40,8 @@ const Timeline = [
     duracao: "",
     cidade: "Neverwinter",
     detalhes: "",
+    resumo: "",
+    imagem: phandalim,
   },
   {
     id: 4,
@@ -34,6 +51,8 @@ const Timeline = [
     duracao: "",
     cidade: "Phandalin",
     detalhes: "",
+    resumo: "",
+    imagem: phandalim2,
   },
   {
     id: 5,
@@ -43,6 +62,8 @@ const Timeline = [
     duracao: "",
     cidade: "Strixhaven",
     detalhes: "",
+    resumo: "",
+    imagem: mapaparadoxia2,
   },
   {
     id: 6,
@@ -52,6 +73,8 @@ const Timeline = [
     duracao: "",
     cidade: "Phandalin",
     detalhes: "",
+    resumo: "",
+    imagem: capathali,
   },
   {
     id: 7,
@@ -61,6 +84,8 @@ const Timeline = [
     duracao: "",
     cidade: "Porto Nianzaru",
     detalhes: "",
+    resumo: "",
+    imagem: tumba,
   },
   {
     id: 8,
@@ -70,6 +95,8 @@ const Timeline = [
     duracao: "",
     cidade: "Waterdeep",
     detalhes: "",
+    resumo: "",
+    imagem: landing,
   },
   {
     id: 9,
@@ -79,6 +106,8 @@ const Timeline = [
     duracao: "",
     cidade: "Neverwinter",
     detalhes: "",
+    resumo: "",
+    imagem: logo,
   },
 ];
 
