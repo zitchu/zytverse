@@ -1,22 +1,40 @@
 import React, { useState } from "react";
 import Timeline from "../components/timeline/Timeline";
 import { motion } from "framer-motion";
+import zyt from "../components/img/zyt.png";
 
 function Home() {
   const [activeItem, setActiveItem] = useState(null);
   return (
-    <div className="h-auto w-full text-black prata flex flex-col py-4  relative">
-      <div className="mt-[50px] py-4 bg-gray-900">
-        <div className="text-white cinzel-regular h-[50vh] px-4 leading-loose">
-          Esta página conta sobre as aventuras de RPG (Role PLaying Game)
-          orquestradas pelo mestre Jeanluiz Monteiro. Com amigos diversos em
-          vários anos e campanhas que duraram poucas sessões, meses ou até anos
-          construindo um mundo ou mais de um mundo onde o desenvolvimento da
-          história em conjunto com os jogadores tem impacto nas histórias que
-          estão por vir e que serão
+    <div className="h-auto w-full text-black prata flex flex-col py-4  relative bg-azul-escuro">
+      <div className="mt-[50px] py-4 ">
+        <div className="flex flex-col">
+          <div>
+            <h1 className="text-white cinzel-black p-4 leading-loose mx-[10%] text-center text-3xl md:text-6xl shadow-text">
+              Zytverse
+            </h1>
+          </div>
+          <div className="flex w-full">
+            <div className="w-full h-full flex items-end">
+              <img
+                src={zyt}
+                alt="zytlogo"
+                className="w-[200px] h-[200px] image-shadow p-1 "
+              />
+            </div>
+            <div className="text-white cinzel-regular h-[50vh] px-4 leading-loose mx-[10%] text-justify ">
+              Esta página conta sobre as aventuras de RPG (Role PLaying Game)
+              orquestradas pelo mestre Jeanluiz Monteiro Com amigos diversos em
+              vários anos e várias campanhas que duraram poucas sessões, meses
+              ou até anos construindo um mundo ou mais de um mundo onde o
+              desenvolvimento da história em conjunto com os jogadores tem
+              impacto nas histórias que estão por vir e que serão relevantes e
+              com consequentes do que acontece nas aventuras.
+            </div>
+          </div>
         </div>
         <div>
-          <div className=" text-white w-auto h-full cinzel-regular px-4">
+          <div className=" text-white w-auto h-full cinzel-regular p-4">
             Linha do tempo do universo principal de aventuras
           </div>
           {Timeline.map((element, index) => {
@@ -94,13 +112,16 @@ function Home() {
                     </>
                   )}
 
-                  {!isLast && (<div className="border-white w-1 h-[5rem] border-2 flex justify-center item inset-0 left-[50%] bottom-0" />)}
+                  {!isLast && (
+                    <div className="border-white w-1 h-[5rem] border-2 flex justify-center item inset-0 left-[50%] bottom-0" />
+                  )}
                 </div>
-                
               </div>
             );
           })}
-          <div className="text-white w-auto h-full cinzel-regular px-4 my-[10%] text-center">Faço aqui um convite a que conheça nossas histórias</div>
+          <div className="text-white w-auto h-full cinzel-regular px-4 my-[10%] text-center">
+            Faço aqui um convite a que conheça nossas histórias
+          </div>
         </div>
       </div>
     </div>

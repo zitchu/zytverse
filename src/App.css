@@ -1,31 +1,79 @@
 .image-shadow {
   filter: drop-shadow(2px 0px 0px white) drop-shadow(-2px 0px 0px white)
     drop-shadow(0px 2px 0px white) drop-shadow(0px -2px 0px white);
-    object-position: contain;
+  object-position: contain;
 }
 
 .vermelho {
   color: #8b0000;
 }
 
+.bg-vermelho {
+  background-color: #8b0000;
+}
+
 .dourado {
   color: #daa520;
+}
+
+.bg-dourado {
+  background-color: #daa520;
 }
 
 .cinza {
   color: #2f4f4f;
 }
 
+.bg-cinza {
+  background-color: #2f4f4f;
+}
+
 .verde {
   color: #006400;
+}
+
+.bg-verde {
+  background-color: #006400;
 }
 
 .azul {
   color: #191970;
 }
 
+.bg-azul {
+  background-color: #191970;
+}
+
 .marrom {
   color: #654321;
+}
+
+.bg-marrom {
+  background-color: #654321;
+}
+
+.azul-escuro {
+  color: #21046e;
+}
+
+.bg-azul-escuro {
+  background-color: #21046e;
+}
+
+.amarelo {
+  color: #faf507;
+}
+
+.bg-amarelo {
+  background-color: #faf507;
+}
+
+.rosa {
+  color: #fa04fa;
+}
+
+.bg-rosa {
+  background-color: #fa04fa;
 }
 
 .silver-prego {
@@ -47,9 +95,8 @@
 }
 
 .silver-bg {
-  
   padding: 6px 16px;
-  
+
   border: none;
   outline: none;
   color: #000;
@@ -68,9 +115,8 @@
 }
 
 .silver-button {
-  
   padding: 6px 16px;
-  
+
   color: #000;
   background: linear-gradient(
     45deg,
@@ -102,9 +148,8 @@
 }
 
 .gold-button {
-  
   padding: 6px 16px;
-  
+
   color: #000;
   background: linear-gradient(
     45deg,
@@ -136,9 +181,8 @@
 }
 
 .bronze-button {
-  
   padding: 6px 16px;
-  
+
   color: #000;
   background: linear-gradient(
     45deg,
@@ -187,7 +231,6 @@
   font-style: normal;
 }
 
-
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -200,3 +243,6 @@
   }
 }
 
+.shadow-text {
+  text-shadow: 2px 5px 2px #fa04fa, -2px 4px 3px #faf507;
+}
