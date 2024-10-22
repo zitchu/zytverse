@@ -8,21 +8,21 @@ function Home() {
   return (
     <div className="h-auto w-full text-black prata flex flex-col py-4  relative bg-azul-escuro">
       <div className="mt-[50px] py-4 ">
-        <div className="flex flex-col">
-          <div>
+        <div className="flex flex-col h-auto">
+          <div className="m-8 mb-20">
             <h1 className="text-white cinzel-black p-4 leading-loose mx-[10%] text-center text-3xl md:text-6xl shadow-text">
               Zytverse
             </h1>
           </div>
-          <div className="flex w-full">
-            <div className="w-full h-full flex items-end">
+          <div className="flex w-full items-end mb-20">
+            <div className="w-full h-full flex">
               <img
                 src={zyt}
                 alt="zytlogo"
-                className="w-[200px] h-[200px] image-shadow p-1 "
+                className="image-shadow p-1 min-w-32 hidden md:block"
               />
             </div>
-            <div className="text-white cinzel-regular h-[50vh] px-4 leading-loose mx-[10%] text-justify ">
+            <div className="text-white cinzel-regular px-4 leading-loose mx-[10%] text-justify ">
               Esta página conta sobre as aventuras de RPG (Role PLaying Game)
               orquestradas pelo mestre Jeanluiz Monteiro Com amigos diversos em
               vários anos e várias campanhas que duraram poucas sessões, meses
@@ -34,7 +34,7 @@ function Home() {
           </div>
         </div>
         <div>
-          <div className=" text-white w-auto h-full cinzel-regular p-4">
+          <div className=" text-white w-auto h-full cinzel-regular p-4 text-center text-2xl">
             Linha do tempo do universo principal de aventuras
           </div>
           {Timeline.map((element, index) => {
