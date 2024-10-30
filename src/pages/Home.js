@@ -56,10 +56,22 @@ function Home() {
                     <div className="text-center cinzel-bold">
                       {element.subtitulo}
                     </div>
-                    <div className="">ano: {element.ano}</div>
-                    <div className="">duração: {element.duracao}</div>
-                    <div className="">cidade: {element.cidade}</div>
-                    <div className="">detalhes: {element.detalhes}</div>
+                    <div className="">
+                      <strong className="cinzel-black pr-2">ano: </strong>
+                      {element.ano}
+                    </div>
+                    <div className="">
+                      <strong className="cinzel-black pr-2">duração: </strong>
+                      {element.duracao}
+                    </div>
+                    <div className="">
+                      <strong className="cinzel-black pr-2">cidade: </strong>
+                      {element.cidade}
+                    </div>
+                    <div className="">
+                      <strong className="cinzel-black pr-2">detalhes: </strong>
+                      {element.detalhes}
+                    </div>
                   </div>
 
                   {isActive && (
