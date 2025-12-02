@@ -7,6 +7,7 @@ import capathali from "../img/phandalim/capathali.jpg";
 import tumba from "../img/tomb/tumba.jpg";
 import logo from "../img/dualidade/logo.jpg";
 import landing from "../img/dualidade/landing.png";
+import coroacao from "../img/dualidade/coroacao.png";
 
 const Timeline = [
   {
@@ -97,7 +98,7 @@ const Timeline = [
     detalhes:
       "Uma viagem ao continente perigoso de Chult que trouxe uma busca para investigar e impedir a maldição da morte, uma luta verdadeira luta contra o calendário.",
     resumo:
-      "Em busca de respostas eu até mesmo cura para uma doença que se espalhou por todo o mundo leva o grupo ao érigoso continente de Chult e pela exploração sobrevivência e busca de recursos os aventureiros tentam prevalecer.",
+      "Em busca de respostas eu até mesmo cura para uma doença que se espalhou por todo o mundo leva o grupo ao perigoso continente de Chult e pela exploração sobrevivência e busca de recursos os aventureiros tentam prevalecer.",
     imagem: tumba,
   },
   {
@@ -105,7 +106,7 @@ const Timeline = [
     titulo: "Dualidade (Online)",
     subtitulo: "consequências",
     ano: "1495- D.R.",
-    duracao: "3 meses em andamento",
+    duracao: "1 ano",
     cidade: "Waterdeep",
     detalhes:
       "O fim do verão marca em Waterdeep uma inquietude entre a nobreza. Circulam rumores e fofocas sobre o que torna os nobres tão mais quietos do que o habitual. Em uma missão de espionagem, o grupo descobriu uma série de traições e mistérios",
@@ -118,13 +119,26 @@ const Timeline = [
     titulo: "Dualidade (Presencial)",
     subtitulo: "e mais consequências",
     ano: "1495- D.R.",
-    duracao: "3 meses em andamento",
+    duracao: "1 ano",
     cidade: "Neverwinter",
     detalhes:
       "Em Neverwinter, após concluírem uma captura de um famoso bandido local, os aventureiros devem seguir indícios de naufrágio para a Stormwreck Isle para descobrir o motivo e se possível alterá-lo.",
     resumo:
       "Uma nova oferta surge, prometendo mil peças de ouro se embarcarem no porto da cidade. As histórias ouvidas na taverna sobre navios perdidos e famílias deixadas para trás acendem diferentes reações no grupo. A embarcação Cada-Vento-Sol os aguarda ao anoitecer, levando-os rumo a uma missão que promete perigos e recompensas em igual medida.",
     imagem: logo,
+  },
+  {
+    id: 10,
+    titulo: "Dualidade (Unificada)",
+    subtitulo: "Responsabilidade",
+    ano: "1496 D.R.",
+    duracao: "6 meses",
+    cidade: "Waterdeep e Phandalim",
+    detalhes:
+      "Em Phandalim, novos detalhes se desenrolam e apontam finalmente onde está a 'organização' na bagunça dos dragões. Em Waterdeep a ascenção de Rosiel",
+    resumo:
+      "Após meses de investigação atrás das máscaras do dragão os planos finalmente se revelaram, 'caos controlado' para abrir espaço a um velho conhecido dos hérois chegar ao poder, se aproveitando dos sucessos deles para tal",
+    imagem: coroacao,
   },
 ];
 
