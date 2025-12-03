@@ -49,8 +49,8 @@ Seguindo pistas deixadas por Gundren, os aventureiros encontraram a entrada da M
 
 **V. A Forja das Ondas**
 Na parte mais profunda da mina, o grupo encontrou a lendária Forja das Ondas, um local de poder mágico capaz de criar itens extraordinários. Eles derrotaram Nezznar e seus capangas, salvando Gundren e garantindo que a forja não caísse em mãos erradas.`,
-      // Personagens da primeira campanha
-      imagens: [Arendele, Bom, darknym, ek]
+      // Personagens da primeira campanha: Hagar, Peter Vivo, Arendele, Nym
+      imagens: [Hagar, petervivo, Arendele, Nym]
     },
     {
       id: 2,
@@ -81,8 +81,8 @@ O grupo realizou várias missões para proteger Phandalin:
 
 **V. O Confronto Final**
 O grupo rastreou "A Aranha" até sua fortaleza nas montanhas. Lá, descobriram que ela planejava usar um artefato antigo para controlar Cryovain completamente. Em um confronto épico, os aventureiros enfrentaram tanto a vilã quanto seu dragão, salvando Phandalin mais uma vez.`,
-      // Personagens da segunda campanha
-      imagens: [Hagar, hincsu, Iggu, Makrik]
+      // Personagens da segunda campanha: Bom, Hinc Su, Iggu, EK
+      imagens: [Bom, hincsu, Iggu, ek]
     },
     {
       id: 3,
@@ -121,8 +121,8 @@ Cada ingrediente exigiu superar desafios únicos:
 
 **V. O Ritual e o Retorno**
 Com todos os ingredientes coletados, o grupo realizou o complexo ritual que permitiu a Thalivar retornar. No processo, aprenderam segredos sobre a natureza da vida, morte e magia que mudariam sua compreensão do universo.`,
-      // Personagens da terceira campanha
-      imagens: [mindartis, Nym, petervivo, talisco]
+      // Personagens da terceira campanha: Makrik, Mindartis, Dark Nym, Talisco
+      imagens: [Makrik, mindartis, darknym, talisco]
     }
   ];
 
@@ -130,9 +130,9 @@ Com todos os ingredientes coletados, o grupo realizou o complexo ritual que perm
 
   // Nomes dos personagens para cada campanha (para alt tags)
   const characterNames = {
-    1: ["Arendele", "Bom", "Dark Nym", "EK"],
-    2: ["Hagar", "Hinc Su", "Iggu", "Makrik"],
-    3: ["Mindartis", "Nym", "Peter Vivo", "Talisco"]
+    1: ["Hagar", "Peter Vivo", "Arendele", "Nym"],
+    2: ["Bom", "Hinc Su", "Iggu", "EK"],
+    3: ["Makrik", "Mindartis", "Dark Nym", "Talisco"]
   };
 
   // Fecha o modal ao clicar fora
@@ -172,7 +172,7 @@ Com todos os ingredientes coletados, o grupo realizou o complexo ritual que perm
       {/* Título Principal */}
       <div className="max-w-7xl mx-auto mb-8">
         <h1 className="text-3xl lg:text-4xl font-bold cinzel-black text-center py-4 text-amber-300">
-          🏔️ Saga Phandalin
+          Saga Phandalin
         </h1>
       </div>
 
@@ -205,7 +205,7 @@ Com todos os ingredientes coletados, o grupo realizou o complexo ritual que perm
           onClick={() => setShowSpoilers(true)}
           className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-3 rounded-lg font-bold cinzel-regular shadow-lg transition-all duration-300 hover:scale-105"
         >
-          📖 Ver Resumo Detalhado
+          Ver Resumo Detalhado
         </button>
       </div>
 
@@ -227,7 +227,7 @@ Com todos os ingredientes coletados, o grupo realizou o complexo ritual que perm
             {/* Cabeçalho do Modal */}
             <div className="sticky top-0 bg-gradient-to-r from-emerald-900 to-amber-800 text-amber-100 p-6 rounded-t-xl flex justify-between items-center">
               <h2 className="text-2xl font-bold cinzel-black">
-                📜 {currentCampaignData.titulo} - Resumo Detalhado
+                {currentCampaignData.titulo} - Resumo Detalhado
               </h2>
               <button
                 onClick={() => setShowSpoilers(false)}

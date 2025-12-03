@@ -47,7 +47,7 @@ function Tomb() {
           onClick={() => setShowSpoilers(true)}
           className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-lg font-bold cinzel-regular shadow-lg transition-all duration-300 hover:scale-105"
         >
-          📜 Ver Resumo Cronológico
+          Ver Resumo Cronológico
         </button>
       </div>
 
@@ -69,7 +69,7 @@ function Tomb() {
             {/* Cabeçalho do Modal */}
             <div className="sticky top-0 bg-gradient-to-r from-gray-900 to-rose-900 text-rose-100 p-6 rounded-t-xl flex justify-between items-center">
               <h2 className="text-2xl font-bold cinzel-black">
-                🏺 Tomb of Annihilation - Resumo Cronológico
+                Tomb of Annihilation - Resumo Cronológico
               </h2>
               <button
                 onClick={() => setShowSpoilers(false)}
@@ -363,7 +363,7 @@ function Tomb() {
         <div className="lg:w-1/2">
           <div className="cinzel-regular bg-gradient-to-b from-gray-800/50 to-gray-900/50 p-8 rounded-xl backdrop-blur-sm border border-gray-700">
             <h1 className="text-3xl lg:text-4xl font-bold cinzel-black text-center mb-8 text-rose-300">
-              🏺 Tomb of Annihilation
+              Tomb of Annihilation
             </h1>
 
             <div className="space-y-6">
